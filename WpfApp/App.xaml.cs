@@ -1,17 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
+using Prism.Ioc;
+using Prism.Unity;
+using WpfApp.Views;
 
 namespace WpfApp
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App
     {
+        protected override IContainerExtension CreateContainerExtension() => new UnityContainerExtension();
+
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            ContainerRegistration.RegisterTypes(containerRegistry);
+        }
+
+        protected override Window CreateShell() => Container.Resolve<MainWindow>();
+
+        protected override void InitializeShell(Window shell)
+        {
+            base.InitializeShell(shell);
+
+            shell?.Show();
+        }
     }
 }
