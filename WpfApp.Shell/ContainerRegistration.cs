@@ -1,5 +1,5 @@
 ﻿using Prism.Ioc;
-using WpfApp.Shell.ViewModels;
+using Serilog;
 
 namespace WpfApp.Shell
 {
@@ -7,7 +7,7 @@ namespace WpfApp.Shell
     {
         public static void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterSingleton<MainWindowVM>();
+            containerRegistry.RegisterSingleton<ILogger>(() => Log.Logger);
         }
     }
 }

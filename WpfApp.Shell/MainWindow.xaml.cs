@@ -1,18 +1,16 @@
 ﻿using System.Reflection;
-using System.Windows;
-using WpfApp.Shell.ViewModels;
-using static Microsoft.Requires;
 
-namespace WpfApp.Shell.Views
+namespace WpfApp.Shell
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
-        public MainWindow(MainWindowVM viewModel)
+        public const string RegionName = "Root";
+        public MainWindow()
         {
-            DataContext = NotNull(viewModel, nameof(viewModel));
+            DataContext = this;
             InitializeComponent();
 
             Title = "Wpf App";
