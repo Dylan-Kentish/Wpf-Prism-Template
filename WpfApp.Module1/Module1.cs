@@ -1,5 +1,6 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
+using Serilog;
 
 namespace WpfApp.Module1
 {
@@ -7,12 +8,11 @@ namespace WpfApp.Module1
     {
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            throw new NotImplementedException();
         }
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            throw new NotImplementedException();
+            containerProvider.Resolve<ILogger>().Information("Module 1 Initialized");
         }
     }
 }

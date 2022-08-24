@@ -1,7 +1,6 @@
 ﻿namespace WpfApp.Infrastructure
 {
-    public class Class1
+    public static class RegionNames
     {
-
     }
 }

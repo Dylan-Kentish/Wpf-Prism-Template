@@ -12,6 +12,12 @@
     <PackageReference Include="Prism.Core" Version="8.1.97" />
     <PackageReference Include="Prism.Unity" Version="8.1.97" />
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="Serilog" Version="2.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfApp.Infrastructure\WpfApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\WpfApp.Module1\WpfApp.Module1.csproj" />
   </ItemGroup>
 
 </Project>
