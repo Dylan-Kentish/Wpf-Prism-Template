@@ -1,7 +1,7 @@
 ﻿using Prism.Ioc;
-using WpfApp.ViewModels;
+using WpfApp.Shell.ViewModels;
 
-namespace WpfApp
+namespace WpfApp.Shell
 {
     internal static class ContainerRegistration
     {

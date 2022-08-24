@@ -1,4 +1,4 @@
-﻿namespace WpfApp.ViewModels
+﻿namespace WpfApp.Shell.ViewModels
 {
     public class MainWindowVM
     {
