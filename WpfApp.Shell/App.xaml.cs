@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using Prism.Ioc;
 using Prism.Unity;
-using WpfApp.Views;
+using WpfApp.Shell.Views;
 
-namespace WpfApp
+namespace WpfApp.Shell
 {
     /// <summary>
     /// Interaction logic for App.xaml

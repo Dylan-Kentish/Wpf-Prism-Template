@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 using System.Windows;
-using WpfApp.ViewModels;
+using WpfApp.Shell.ViewModels;
 using static Microsoft.Requires;
 
-namespace WpfApp.Views
+namespace WpfApp.Shell.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
